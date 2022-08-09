@@ -10,9 +10,27 @@
 .tm {
   background-color: #ffc107;
 } */
+
+.body {
+  background-color: gray;
+}
 .YR_theme {
   background-color: #ffc107;
+  border-radius: 25px;
+}
+.YR_theme [h1] {
+  margin: 10px;
+}
+.Header_sort {
+  display: flex;
+  float: justify;
 }
 .Black_theme {
   background-color: black;
+}
+.List {
+  float: right;
+}
+#mytitle {
+  float: left;
 }
