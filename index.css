@@ -28,15 +28,6 @@ header {
   padding: 10px 20px 0;
 }
 
-header a.logo {
-  float: left;
-  margin-top: 8px;
-}
-
-header a.logo img {
-  width: 50%;
-}
-
 header ul {
   list-style: none;
   float: right;
@@ -84,18 +75,8 @@ header ul li a:hover {
   text-align: center;
 }
 
-.img-part figure .circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 footer {
   padding: 20px 10px;
-  /* display: flex; */
   justify-content: space-between;
 }
 
@@ -104,7 +85,7 @@ footer ul {
 }
 
 footer ul li {
-  display: inline-block;
+  display: flex;
   padding-left: 20px;
 }
 
@@ -115,4 +96,8 @@ footer ul li a {
 
 footer ul li a:hover {
   color: #ff6363;
+}
+
+#contect_me {
+  margin-bottom: 7px;
 }
