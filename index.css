@@ -161,12 +161,7 @@ body {
 }
 
 .skill-section h2 {
-  margin: 0;
-  margin-right: 10px;
   float: left;
-  /* writing-mode: vertical-lr; */
-  /* text-orientation: upright; */
-  /* transform: rotate(180deg); */
 }
 
 /* .skill-section ul {
