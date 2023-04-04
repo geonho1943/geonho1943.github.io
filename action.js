@@ -1,6 +1,9 @@
 const aboutMe = document.getElementById("aboutMe");
 const aboutMe1 = document.getElementById("aboutMe1");
 
+const skill = document.getElementById("skill");
+const skill1 = document.getElementById("skill1");
+
 const project = document.getElementById("project");
 const project1 = document.getElementById("project1");
 
@@ -13,6 +16,13 @@ const contact1 = document.getElementById("contact1");
 aboutMe.addEventListener("click", function () {
   window.scrollBy({
     top: aboutMe1.getBoundingClientRect().top,
+    behavior: "smooth",
+  });
+});
+
+skill.addEventListener("click", function () {
+  window.scrollBy({
+    top: skill1.getBoundingClientRect().top,
     behavior: "smooth",
   });
 });
