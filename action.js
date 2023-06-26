@@ -1,8 +1,8 @@
 const aboutMe = document.getElementById("aboutMe");
 const aboutMe1 = document.getElementById("aboutMe1");
 
-const skill = document.getElementById("skill");
-const skill1 = document.getElementById("skill1");
+const experience = document.getElementById("experience");
+const experience1 = document.getElementById("experience1");
 
 const project = document.getElementById("project");
 const project1 = document.getElementById("project1");
@@ -20,9 +20,9 @@ aboutMe.addEventListener("click", function () {
   });
 });
 
-skill.addEventListener("click", function () {
+experience.addEventListener("click", function () {
   window.scrollBy({
-    top: skill1.getBoundingClientRect().top,
+    top: experience1.getBoundingClientRect().top,
     behavior: "smooth",
   });
 });

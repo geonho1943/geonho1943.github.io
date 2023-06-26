@@ -153,14 +153,14 @@ body {
   flex-direction: column;
 }
 
-.skill-section {
+.experience-section {
   display: flex;
   flex-direction: column;
   padding: 20px;
   background-color: #f2f2f2;
 }
 
-.skill-section h2 {
+.experience-section h2 {
   float: left;
 }
 
@@ -170,13 +170,13 @@ body {
   list-style: none;
 } */
 
-.skill-section li {
+.experience-section li {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.skill-section li h3 {
+.experience-section li h3 {
   font-weight: bold;
   margin-right: 10px;
   width: 120px;
