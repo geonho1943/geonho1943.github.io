@@ -6,12 +6,12 @@
 a {
   color: #000000;
   text-decoration: none;
-  outline: none
+  outline: none;
 }
 
 a:hover, a:active {
   text-decoration: none;
-  color: #fff;
+  color: #f2f3f7;
   background-color: #87c1e2;
 }
 
@@ -27,8 +27,8 @@ header h1 {
 body {
   margin: 0;
   padding: 0;
-  font-size: 0.875rem;
-  line-height: 1rem;
+  /* font-size: 0.875rem;
+  line-height: 1rem; */
 }
 
 .container {
@@ -70,11 +70,9 @@ header ul li a:hover {
 .main {
   height: auto;
   overflow: hidden;
-  /* background: url(../image/bookwall-bohem.jpg); */
   background-size: cover;
   border-radius: 10px;
   padding: 20px;
-  /* max-width: 1000px; */
 }
 
 .text-box {
@@ -82,7 +80,7 @@ header ul li a:hover {
   left: 100px;
   padding: 10px 25px;
   width: 45%;
-  /* background-color: red; */
+
   border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -90,9 +88,7 @@ header ul li a:hover {
 
 .content-box {
   background-color: #f2f3f7;
-  /* opacity: 0.7; */
-  /* margin: 25px; */
-  /* height: 600px; */
+
   overflow: hidden;
   background-size: cover;
   border-radius: 10px;
@@ -157,18 +153,12 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: #f2f3f7;
 }
 
 .experience-section h2 {
   float: left;
 }
-
-/* .skill-section ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-} */
 
 .experience-section li {
   margin-bottom: 10px;
@@ -180,4 +170,27 @@ body {
   font-weight: bold;
   margin-right: 10px;
   width: 120px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .text-box {
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  header ul {
+    float: none;
+    text-align: center;
+  }
+
+  header ul li {
+    display: block;
+    margin: 10px;
+  }
+
+  .experience-section h2 {
+    float: none;
+  }
 }
