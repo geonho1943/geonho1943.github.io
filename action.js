@@ -1,48 +1,48 @@
+const aboutMeLink = document.getElementById("aboutMeLink");
 const aboutMe = document.getElementById("aboutMe");
-const aboutMe1 = document.getElementById("aboutMe1");
 
+const experienceLink = document.getElementById("experienceLink");
 const experience = document.getElementById("experience");
-const experience1 = document.getElementById("experience1");
 
+const projectLink = document.getElementById("projectLink");
 const project = document.getElementById("project");
-const project1 = document.getElementById("project1");
 
+const awardLink = document.getElementById("awardLink");
 const award = document.getElementById("award");
-const award1 = document.getElementById("award1");
 
+const contactLink = document.getElementById("contactLink");
 const contact = document.getElementById("contact");
-const contact1 = document.getElementById("contact1");
 
-aboutMe.addEventListener("click", function () {
+aboutMeLink.addEventListener("click", function () {
   window.scrollBy({
     top: aboutMe1.getBoundingClientRect().top,
     behavior: "smooth",
   });
 });
 
-experience.addEventListener("click", function () {
+experienceLink.addEventListener("click", function () {
   window.scrollBy({
-    top: experience1.getBoundingClientRect().top,
+    top: experience.getBoundingClientRect().top,
     behavior: "smooth",
   });
 });
 
-project.addEventListener("click", function () {
+projectLink.addEventListener("click", function () {
   window.scrollBy({
-    top: project1.getBoundingClientRect().top,
+    top: project.getBoundingClientRect().top,
     behavior: "smooth",
   });
 });
 
-award.addEventListener("click", function () {
+awardLink.addEventListener("click", function () {
   window.scrollBy({
-    top: award1.getBoundingClientRect().top,
+    top: award.getBoundingClientRect().top,
     behavior: "smooth",
   });
 });
-contact.addEventListener("click", function () {
+contactLink.addEventListener("click", function () {
   window.scrollBy({
-    top: contact1.getBoundingClientRect().top,
+    top: contact.getBoundingClientRect().top,
     behavior: "smooth",
   });
 });

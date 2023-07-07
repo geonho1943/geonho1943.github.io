@@ -13,59 +13,57 @@
   <header class="container">
     <h1>GH's Portfolio</h1>
     <ul>
-      <li style="float: right;" id="contact"><a href="#">Contact</a></li>
-      <li style="float: right;" id="award"><a href="#">Award</a></li>
-      <li style="float: right;" id="project"><a href="#">Project</a></li>
-      <li style="float: right;" id="experience"><a href="#">Experience</a></li>
-      <li style="float: right;" id="aboutMe"><a href="#">About Me</a></li>
-
+      <li id="aboutMeLink"><a href="#">About Me</a></li>
+      <li id="experienceLink"><a href="#">Experience</a></li>
+      <li id="projectLink"><a href="#">Project</a></li>
+      <li id="awardLink"><a href="#">Award</a></li>
+      <li id="contactLink"><a href="#">Contact</a></li>
     </ul>
   </header>
 
-  <article id="aboutMe" class="main container">
+  <article id="aboutMe" class="container">
     <div class="content-box">
       <div>
-        <div class="link" style="float: right;">
-          <ul style="list-style: none;">
-            <li style="float: left; margin: 20px;"> <a href="https://github.com/geonho1943"><img src="image/github.png"
-                  height="45px"></a></li>
-            <li style="float: left; margin: 20px;"><a href="https://pushvalue.tistory.com/"><img src="image/blog.png"
-                  height="45px"></a></li>
-            <li style="float: left; margin: 20px;"><a href="mailto:thsrjsgh02@naver.com"><img src="image/email.png"
-                  height="45px"></a></li>
-            <li style="float: left; margin: 20px;"><a href="http://qr.kakao.com/talk/tIwCDb1QTQMIPoidllOR.6xmR9Y-"><img
-                  src="image/kakao-talk.png" height="45px"></a>
+        <div class="link">
+          <ul>
+            <li><a href="https://github.com/geonho1943"><img src="image/github.png" height="45px"></a></li>
+            <li><a href="https://pushvalue.tistory.com/"><img src="image/blog.png" height="45px"></a></li>
+            <li><a href="mailto:thsrjsgh02@naver.com"><img src="image/email.png" height="45px"></a></li>
+            <li><a href="http://qr.kakao.com/talk/tIwCDb1QTQMIPoidllOR.6xmR9Y-"><img src="image/kakao-talk.png"
+                  height="45px"></a>
           </ul>
         </div>
-        <img src="https://avatars.githubusercontent.com/u/106109077?v=4" alt="사진"
-          style="border-radius: 50%; height: 250px; margin: 35px; ">
+        <div id="profileImg">
+          <img src="https://avatars.githubusercontent.com/u/106109077?v=4" alt="사진">
+        </div>
       </div>
       <div class="content">
         <p>
           안녕하세요 <strong>손건호</strong> 입니다<br>
           Java를 사용한 백엔드 웹 개발자를 목표로 달리고 있습니다<br>
           멈추지 않고 지속적으로 돌아가는 서버의 매력을 발견하면서 백엔드 웹 개발자를 선택 하게 되었습니다<br>
-          Java Spring MYSQL AWS Oracle Git 등등을 사용하여 프로젝트를 만들고 있습니다<br>
+          Java Spring MySQL Git 등등을 사용하여 프로젝트를 만들고 있습니다<br>
         </p>
-        <div class="contact">
-        </div>
       </div>
     </div>
   </article>
-  <article id="experience1" class="main container">
+
+  <article id="experience" class="container">
     <div class="content-box">
       <div class="container">
         <div class="experience-section">
-          <h2 style="margin-bottom: 40px;">Experience</h2>
+          <h2>Experience</h2>
           <ul>
             <li>
-              <h3>BackEnd: </h3> Java, Spring, Gradle
+              <p><strong>BackEnd: </strong> &emsp; Java, Spring, Gradle</p>
             </li>
             <li>
-              <h3>Frontend: </h3> HTML, Thymeleaf, CSS, JS, jQuery
+              <p><strong>Frontend: </strong> &emsp; HTML, Thymeleaf, CSS, JS, jQuery</p>
             </li>
             <li>
-              <h3>Etc: </h3> Oracle Cloud, AWS(Ec2, Lightsail), MySQL, Linux(6,7,8), Git, GitHub, GitHub Actions
+              <p><strong>Etc: </strong> &emsp;&emsp;&emsp;&ensp; Oracle Cloud, AWS, MySQL, Linux, Git, GitHub, GitHub
+                Actions
+              </p>
             </li>
           </ul>
         </div>
@@ -73,67 +71,31 @@
     </div>
     </div>
   </article>
-  <article id="project1" class="main container">
-    <div class="content-box">
-      <div class="container">
-        <h2 style="margin-bottom: 40px;">Project</h2>
-        <h2>LFG service</h2><br>
-        <div>2022/10/31 ~ 현재 <a href="https://github.com/geonho1943/LFG">[github 바로가기]</a>
-          <a href="http://144.24.80.93/">[LFG 바로가기]</a>
-        </div>
-        <p>
-          <a href="https://pushvalue.tistory.com/47">steam api parsing > 📝 블로그 보기</a><br>
-          <a href="https://pushvalue.tistory.com/54">배포 자동화(GitHub Actions) > 📝 블로그 보기</a><br>
-          <a href="https://pushvalue.tistory.com/64">test case > 📝 블로그 보기</a><br>
-          <a>
-        </p>
-      </div>
-    </div>
-  </article>
 
-  <article id="award1" class="main container">
-    <div class="content-box">
-      <h2 style="margin-bottom: 40px;">Award</h2>
-      <h2> 2021 CMU 우수학습성과 및 캡스톤디자인 경진대회</h2><br>
-      <div>2021/03/01 ~ 2021/12/14 <a href="https://pushvalue.tistory.com/29">[수상내역 확인하기]</a>
-        <p> 생명의 수호자팀 에서 팀리더로 활동<br>
-          (Safe of Kickboard) 프로젝트을 통해 대상을 받음<br>
-          <br>
-          SOK프로젝트의 구조와 원리 설계<br>
-          아두이노와 센서모듈 연동<br>
-          스마트폰과 아두이노의 데이터 연동<br>
-          을 담당
-        </p>
-      </div>
-    </div>
-  </article>
   <footer class="container">
-    <article id="contact1">
-      <div class="link" style="float: right;">
-        <ul style="list-style: none;">
-          <li style="float: left; margin: 20px;"> <a href="https://github.com/geonho1943"><img src="image/github.png"
-                height="45px"></a></li>
-          <li style="float: left; margin: 20px;"><a href="https://pushvalue.tistory.com/"><img src="image/blog.png"
-                height="45px"></a></li>
-          <li style="float: left; margin: 20px;"><a href="mailto:thsrjsgh02@naver.com"><img src="image/email.png"
-                height="45px"></a></li>
-          <li style="float: left; margin: 20px;"><a href="http://qr.kakao.com/talk/tIwCDb1QTQMIPoidllOR.6xmR9Y-"><img
-                src="image/kakao-talk.png" height="45px"></a>
+    <article id="contact">
+      <div class="link">
+        <ul>
+          <li><a href="https://github.com/geonho1943"><img src="image/github.png" height="45px"></a></li>
+          <li><a href="https://pushvalue.tistory.com/"><img src="image/blog.png" height="45px"></a></li>
+          <li><a href="mailto:thsrjsgh02@naver.com"><img src="image/email.png" height="45px"></a></li>
+          <li><a href="http://qr.kakao.com/talk/tIwCDb1QTQMIPoidllOR.6xmR9Y-"><img src="image/kakao-talk.png"
+                height="45px"></a>
           </li>
         </ul>
       </div>
-      <ul>
-        <li id="contact_me">Contact Me</li>
-        <li><a href="mailto:thsrjsgh02@naver.com">E-mail : thsrjsgh02@naver.com</a></li>
-        <li>
-          <a href="https://github.com/geonho1943"> GitHub profile </a>
-        </li>
-        <li>Copyright 2022. 손건호</li>
-        <li>*해당 사이트의 카카오톡 아이콘은 모바일 환경에서만 지원 됩니다</li>
-      </ul>
-
+      <p>
+      <div id="contact_me">
+        <h4>Contact Me</h4>
+        <a href="mailto:thsrjsgh02@naver.com">thsrjsgh02@naver.com</a><br>
+        <a href="https://github.com/geonho1943"> GitHub profile </a><br>
+        Copyright 2022. 손건호<br>
+        *해당 사이트의 카카오톡 아이콘은 모바일 환경에서만 지원 됩니다
+      </div>
+      </p>
     </article>
   </footer>
+
   <script src="action.js"></script>
 </body>
 

@@ -27,8 +27,6 @@ header h1 {
 body {
   margin: 0;
   padding: 0;
-  /* font-size: 0.875rem;
-  line-height: 1rem; */
 }
 
 .container {
@@ -54,7 +52,6 @@ header ul li {
 }
 
 header ul li a {
-  text-decoration: none;
   color: #3d3d3d;
   padding: 0 5px;
   margin: 0 10px;
@@ -88,7 +85,6 @@ header ul li a:hover {
 
 .content-box {
   background-color: #f2f3f7;
-
   overflow: hidden;
   background-size: cover;
   border-radius: 10px;
@@ -125,19 +121,9 @@ footer ul li {
   padding-left: 20px;
 }
 
-footer ul li a {
-  text-decoration: none;
-  color: #3d3d3d;
-}
-
-footer ul li a:hover {
-  color: #4d7084;
-}
-
 #contact_me {
   margin-bottom: 7px;
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -162,8 +148,8 @@ body {
 
 .experience-section li {
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+  list-style: none;
+  /* align-items: center; */
 }
 
 .experience-section li h3 {
@@ -193,4 +179,38 @@ body {
   .experience-section h2 {
     float: none;
   }
+}
+
+.link ul li a img:hover {
+  background-color: #87c1e2;
+}
+
+/* 인라인 제거 작업 추가 항목 */
+
+footer li {
+  float: left;
+  margin: 20px;
+}
+
+.link {
+  float: right;
+}
+
+.link ul {
+  list-style: none;
+}
+
+.link ul li {
+  float: left;
+  margin: 20px;
+}
+
+#profileImg img {
+  border-radius: 50%;
+  height: 250px;
+  margin: 35px
+}
+
+.experience-section h2 {
+  margin-bottom: 40px;
 }
