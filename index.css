@@ -1,12 +1,18 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
 a {
-  color: #000000;
   text-decoration: none;
-  outline: none;
+  color: #000000;
 }
 
 a:hover, a:active {
@@ -14,78 +20,61 @@ a:hover, a:active {
   color: #f2f3f7;
   background-color: #87c1e2;
 }
-
-p {
-  line-height: 28px;
-}
-
-/* container */
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   max-width: 1000px;
+  min-width: 393px;
   margin: 30px auto;
-  background-color: #f2f3f7;
-  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.202);
 }
 
-/* header */
 header {
-  min-height: 80px;
-  padding: 10px 20px;
-}
-
-header h1 {
-  padding: 5px;
-  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
 }
 
 header ul {
-  list-style: none;
   float: right;
 }
 
-header ul li {
-  display: inline-block;
+header nav ul {
+  list-style: none;
+  display: flex;
 }
 
-header ul li a {
+header nav ul li {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+header nav ul li a {
   color: #3d3d3d;
-  padding: 0 5px;
-  margin: 0 10px;
   width: 100px;
 }
 
-header ul li a:hover {
-  padding-bottom: 8px;
-  border-bottom: 3px solid #4d7084;
+header nav ul li a:hover {
+  padding: 5px;
+  border-bottom: 4px solid #4d7084;
+  padding-bottom: 18px;
   color: #4d7084;
 }
 
-/* main */
-.main {
-  height: auto;
-  overflow: hidden;
-  background-size: cover;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-/* content-box */
 .content-box {
-  background-color: #f2f3f7;
-  overflow: hidden;
-  background-size: cover;
-  border-radius: 10px;
-  padding: 20px;
   max-width: 1000px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-size: cover;
 }
 
-.content-box h1 {
+.content-box h2 {
+  margin-bottom: 20px;
   font-size: 25px;
   padding: 10px;
 }
@@ -95,42 +84,34 @@ header ul li a:hover {
   padding-top: 10px;
 }
 
-/* footer */
+#profileImg img {
+  border-radius: 50%;
+  height: 300px;
+  margin: 40px;
+}
+
 footer {
-  padding: 20px 10px;
   justify-content: space-between;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 10px;
 }
 
 footer ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 footer ul li {
   display: flex;
-  padding-left: 20px;
+  margin: 0 10px;
 }
 
-#contact_me {
-  margin-bottom: 10px;
-}
-
-/* 본문 스타일 */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* 경험 섹션 스타일 */
 .experience-section {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #f2f3f7;
 }
 
 .experience-section h2 {
@@ -148,40 +129,35 @@ body {
   width: 120px;
 }
 
-/* 인라인 제거 작업 추가 항목 */
-footer li {
-  float: left;
-  margin: 20px;
-}
-
-.link {
-  float: right;
-}
-
 .link ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .link ul li {
-  float: left;
-  margin: 20px;
+  margin: 0 17px;
+}
+
+.link ul li a:hover {
+  background-color: #fff;
+}
+
+.link ul li a img {
+  transition: transform 0.2s;
 }
 
 .link ul li a img:hover {
+  transform: scale(1.1);
   background-color: #87c1e2;
+  margin: 5px;
 }
 
-#profileImg img {
-  border-radius: 50%;
-  height: 250px;
-  margin: 35px;
+.link ul li a:focus {
+  outline: none;
 }
 
-.experience-section h2 {
-  margin-bottom: 40px;
-}
-
-/* project */
 #project {
   display: flex;
   justify-content: center;
@@ -205,33 +181,45 @@ footer li {
   list-style: none;
 }
 
-/* 미디어 쿼리 */
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
   header ul {
-    float: none;
-    text-align: center;
+      float: none;
+      text-align: center;
   }
 
-  header ul li {
-    display: block;
-    margin: 10px;
+  header nav ul {
+      flex-direction: column;
+      margin-top: 10px;
   }
 
-  .experience-section h2 {
-    float: none;
+  header nav ul li {
+      display: block;
+      margin: 10px;
   }
 
   .position {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
   }
 
-  .imageBox {
-    flex: 0 0 100%;
-  }
-
+  .imageBox,
   .introduceBox {
-    flex: 0 0 100%;
-    padding-left: 0;
+      flex: 0 0 100%;
+      padding-left: 0;
+  }
+
+  #profileImg {
+      display: flex;
+  }
+
+  #profileImg img {
+      border-radius: 50%;
+      height: 300px;
+      margin: auto;
   }
 }
