@@ -1,8 +1,3 @@
-# Portfolio
+# 잠정적 비활성화
 
-[geonho1943](https://github.com/geonho1943)의 [포트폴리오 사이트](https://geonho1943.github.io/) 입니다
-
-* 카카오톡 아이콘 링크는 모바일 환경에서 지원 됩니다
-
-##
-HTML, CSS, Vanilla JS
+* 내용 최신화를 위해 페이지가 비활성화 상태 입니다
